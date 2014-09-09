@@ -40,4 +40,8 @@ task wrapper(type: Wrapper) {
   gradleVersion = "1.3"
 }
 
+task copyDependencies(type: Copy){
+	from configurations.compile
+	into 'lib'
+}
 
